@@ -20,6 +20,10 @@
     line-height: 55px;
 }
 
+.investments_content_info_titles {
+    margin-left: 10px;
+}
+
 .investments_content_info h1 span{
     color: #55FE66;
 }
@@ -79,4 +83,82 @@
 
 .investments_content_img {
     margin-left: 20%;
+}
+
+.investments_content_info_titles h1{
+   white-space: nowrap;
+}
+
+@media (max-width: 1160px) {
+    .investments_content_img_iphone {
+        height: 600px;
+    }
+    .investments_content_img {
+        margin-right: 20px;
+    }
+    .investments_content_img {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 980px) {
+    .investments_content_img_iphone {
+        height: 500px;
+    }
+    .investments_content_img_cirlce {
+        height: 800px;
+    }
+}
+
+@media (max-width: 888px) {
+    .investments_content_img {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 830px) {
+    .investments_content {
+        flex-direction: column;
+    }
+    .investments_content_info {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .investments_content_info_titles {
+        margin: 0 10px;
+        align-items: center;
+    }
+    .investments_content {
+        padding: 100px 0;
+    }
+    .investments_content_img {
+        margin: 0;
+    }
+}
+
+@media (max-width: 426px) {
+    .investments_content {
+        padding: 50px 0;
+    }
+    .investments_items {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 410px) {
+    .investments_content_info_titles h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .investments_items li p {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .investments_content_img_iphone {
+        height: 420px;
+    }
 }
