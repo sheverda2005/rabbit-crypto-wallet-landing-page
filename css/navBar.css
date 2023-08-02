@@ -33,3 +33,75 @@ nav {
 .nav_content button {
     margin: 0 10px;
 }
+
+
+.burger {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    height: 4px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+
+}
+
+.burger .line.first {
+    transform: rotate(0) translate(0);
+    transition: all 0.3s ease;
+}
+
+.burger .line.third {
+    transform: rotate(0) translate(0);
+    transition: all 0.3s ease;
+}
+
+
+.burger.active .line.first {
+    transform: rotate(45deg) translate(20px, 0px);
+    transition: all 0.3s ease;
+}
+
+.burger.active .line.third {
+    transform: rotate(-45deg) translate(19px);
+    transition: all 0.3s ease;
+}
+
+.burger.active {
+    transform: translate(-14px);
+}
+
+.burger .line.second {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.burger.active .line.second {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+    .nav_items {
+        width: 50%;
+    }
+}
+
+@media (max-width: 620px) {
+    .nav_items {
+        display: none;
+    }
+    .nav_content button {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

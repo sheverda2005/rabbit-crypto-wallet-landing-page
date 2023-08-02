@@ -98,3 +98,76 @@ header {
     border: 1px solid #55FE66;
     transition: all 0.3s ease;
 }
+
+
+@media (max-width: 850px) {
+    .header_items_info {
+        flex-direction: column;
+    }
+    .header_item_info button {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header_phones img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    .header_titles h1 {
+        line-height: 80px;
+        font-size: 45px;
+    }
+    .header_titles {
+        margin-top: 100px;
+    }
+    .header_titles h3 {
+        margin-top: 30px;
+        font-size: 18px;
+    }
+    .header_items_info {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 525px) {
+    .header_titles h1 {
+        line-height: 60px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 460px) {
+    .header_titles h1 {
+        line-height: 50px;
+        font-size: 35px;
+    }
+    .header_titles h3 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header_phones img{
+        max-height: 500px;
+    }
+    .header_titles h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 365px) {
+    .header_titles h1 {
+        line-height: 40px;
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header_phones img{
+        max-height: 450px;
+    }
+}
