@@ -94,6 +94,10 @@ header {
     transition: all 0.3s ease;
 }
 
+.header_items_info li {
+    text-align: center;
+}
+
 .header_item_info button:hover {
     border: 1px solid #55FE66;
     transition: all 0.3s ease;
@@ -156,6 +160,9 @@ header {
     }
     .header_titles h1 {
         font-size: 30px;
+    }
+    .header_items_info li {
+        margin: 0 10px;
     }
 }
 
