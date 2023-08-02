@@ -6,6 +6,7 @@ footer {
 .footer_content {
     display: flex;
     flex-direction: column;
+    margin: 0 10px;
 }
 
 .footer_logo_icons {
@@ -85,3 +86,37 @@ footer {
     fill: #55FE66;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 600px) {
+    .footer_lists {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_list {
+        margin-top: 50px;
+    }
+    .footer_lists {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .footer_logo_icons {
+        flex-direction: column;
+    }
+    .footer_icons_media {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_icons_media svg {
+        margin: 15px;
+    }
+    .footer_list {
+        margin-top: 30px;
+    }
+}
+

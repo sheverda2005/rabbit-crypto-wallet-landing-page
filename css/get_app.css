@@ -36,3 +36,73 @@
     cursor: pointer;
     margin-right: 10px;
 }
+
+@media (max-width: 1030px) {
+    .get_app_content {
+        margin: 0 10px;
+    }
+    .get_app_info {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 920px) {
+    .get_app_info {
+        margin-left: 5%;
+    }
+    .get_app_content img {
+        max-height: 600px;
+    }
+    .get_app_info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 720px) {
+    .get_app_info_buttons {
+        flex-direction: column;
+        align-items: start;
+    }
+    .get_app_info_button{
+        height: 70px!important;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .get_app_content {
+        flex-direction: column;
+    }
+    .get_app_info {
+        width: 100%;
+        margin-left: 0;
+    }
+    .get_app_info_buttons {
+        flex-direction: row;
+        justify-content: start;
+    }
+    .get_app_info p {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .get_app {
+        padding: 50px 0;
+    }
+    .get_app_info_buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .get_app_info {
+        text-align: center;
+    }
+    .get_app_info h2 {
+        font-size: 30px;
+    }
+    .get_app_info p {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}

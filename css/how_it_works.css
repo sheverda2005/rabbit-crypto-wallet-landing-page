@@ -158,4 +158,7 @@
     .how_it_works_iphone_online {
         margin-left: 10px;
     }
+    .how_it_works_iphone_online {
+        max-height: 500px;
+    }
 }
