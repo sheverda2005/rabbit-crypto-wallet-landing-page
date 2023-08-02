@@ -41,8 +41,8 @@ nav {
     cursor: pointer;
 }
 
-.burger::selection {
-    background-color: transparent;
+.burger {
+    user-select: none;
 }
 
 
