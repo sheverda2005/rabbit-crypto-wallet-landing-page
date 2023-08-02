@@ -119,18 +119,16 @@ nav {
     justify-content: center;
     text-align: center;
     top: -708px;
-    transform: translateX(500px);
     display: none;
     right: 0;
     border-radius: 4px;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 
 }
 
 .burger_menu.active {
     top: 78px;
-    transform: translateX(1px);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 
