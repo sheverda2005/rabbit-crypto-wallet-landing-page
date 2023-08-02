@@ -1,0 +1,38 @@
+.get_app {
+    padding: 100px 0;
+}
+
+.get_app_content {
+    display: flex;
+    align-items: center;
+}
+
+.get_app_info h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.get_app_info h2 span {
+    color: #55FE66;
+}
+
+.get_app_info {
+    width: 40%;
+    margin-left: 200px;
+}
+
+.get_app_info p {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 50px 0;
+}
+
+.get_app_info_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.get_app_info_buttons img{
+    cursor: pointer;
+    margin-right: 10px;
+}

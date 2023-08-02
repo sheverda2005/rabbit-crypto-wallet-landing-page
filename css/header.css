@@ -1,0 +1,100 @@
+header {
+    overflow: hidden;
+    position: relative;
+}
+
+.header_left {
+    position: absolute;
+}
+
+.header_right {
+    position: absolute;
+    right: 0;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+
+.nav_icon img {
+    cursor: pointer;
+}
+
+.header_titles {
+    margin-top: 150px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header_titles h1{
+    display: flex;
+    flex-direction: column;
+    line-height: 100px;
+}
+
+.header_titles h3 {
+    margin-top: 50px;
+}
+
+
+.header_phones  {
+    margin-top: 70px;
+}
+
+.header_items_info {
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    z-index: 20;
+}
+
+.header_items_info li{
+    margin: 0 20px;
+}
+
+.header_item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_item_info_title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.header_item_info_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.header_item_info button {
+    margin-top: 40px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: black;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin-bottom: 140px;
+    transition: all 0.3s ease;
+}
+
+.header_item_info button:hover {
+    border: 1px solid #55FE66;
+    transition: all 0.3s ease;
+}

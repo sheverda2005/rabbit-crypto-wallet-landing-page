@@ -1,0 +1,35 @@
+nav {
+    background-color: #000;
+
+}
+
+
+.nav_icon {
+    margin: 0 10px;
+}
+
+.nav_items {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.nav_items li{
+    margin: 0 10px;
+}
+
+.nav_items li a{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+
+.nav_items li a:hover{
+    color: #55FE66;
+    transition: all 0.3s ease;
+}
+
+
+.nav_content button {
+    margin: 0 10px;
+}

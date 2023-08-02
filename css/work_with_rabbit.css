@@ -1,0 +1,28 @@
+.work_with_rabbit {
+    padding: 150px 0;
+}
+
+.work_with_rabbit_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work_with_rabbit_content h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.work_with_rabbit_content h1 span{
+    color: #55FE66;
+}
+
+.work_with_rabbit_company_icons {
+    margin: 100px 0 0 100px;
+    display: flex;
+}
+
+.work_with_rabbit_company_icons.two_line {
+    margin: 30px 0 0 -100px;
+    display: flex;
+}
