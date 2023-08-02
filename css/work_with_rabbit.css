@@ -26,3 +26,49 @@
     margin: 30px 0 0 -100px;
     display: flex;
 }
+
+.work_with_rabbit_company_icons_mobile {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1100px) {
+    .work_with_rabbit_company_icons {
+        display: none;
+    }
+    .work_with_rabbit_company_icons.two_line {
+        display: none;
+    }
+    .work_with_rabbit_company_icons_mobile {
+        display: flex;
+        margin-top: 50px;
+    }
+    .work_with_rabbit_company_icons_mobile li{
+        margin: 20px 0;
+    }
+    .work_with_rabbit_content {
+        margin: 0 20px;
+    }
+    .work_with_rabbit_content {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .work_with_rabbit {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 426px) {
+    .work_with_rabbit {
+        padding: 50px 0;
+    }
+    .work_with_rabbit_content h1 {
+        font-size: 35px;
+    }
+}

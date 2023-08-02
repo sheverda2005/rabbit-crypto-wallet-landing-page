@@ -91,4 +91,71 @@
     margin-top: 50px;
 }
 
+.how_it_works_iphone_online {
+    display: none;
+}
 
+@media (max-width: 900px) {
+    .how_it_works_info_img img {
+        max-height: 500px;
+    }
+    .how_it_works_info_text {
+        margin-left: 20px;
+    }
+    .how_it_works_info {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 840px) {
+    .how_it_works_info_img img {
+        max-height: 450px;
+    }
+    .how_it_works_info_text p {
+        font-size: 20px;
+    }
+    .how_it_works_info {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 745px) {
+    .how_it_works_info_img {
+        display: none;
+    }
+    .how_it_works_info {
+        justify-content: start;
+    }
+    .how_it_works_info_text {
+        margin-left: 15%;
+    }
+    .how_it_works_info_text p {
+        font-size: 24px;
+    }
+    .how_it_works_iphone_online {
+        display: block;
+        margin-top: 50px;
+    }
+    .how_it_works {
+        padding: 100px 0;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .how_it_works_info_text {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 426px) {
+    .how_it_works_info_text p {
+        font-size: 20px;
+    }
+    .how_it_works {
+        padding: 50px 0;
+    }
+    .how_it_works_iphone_online {
+        margin-left: 10px;
+    }
+}
