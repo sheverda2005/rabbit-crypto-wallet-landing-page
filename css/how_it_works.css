@@ -24,7 +24,7 @@
 }
 
 .how_it_works_items li {
-    margin: 15px 0;
+    margin: 20px 0;
     cursor: pointer;
 }
 
@@ -50,26 +50,11 @@
 
 .how_it_works_items  {
     margin-left: 30px;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.how_it_works_items::before  {
-    content: url("/img/chevron.svg");
-    display: block;
-    cursor: pointer;
-    margin: 20px 0;
-}
-
-.how_it_works_items::after  {
-    content: url("/img/chevron-down.svg");
-    display: block;
-    cursor: pointer;
-    margin: 20px 0;
-
-}
 
 .how_it_works_info_img img {
     max-height: 600px;
