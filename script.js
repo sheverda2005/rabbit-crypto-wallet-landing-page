@@ -98,7 +98,7 @@ function open_window() {
             newDivs.push(newDiv)
             generate_circle(newDiv)
         }
-    } else if (window.innerWidth < 1190) {
+    } else if (window.innerWidth > 890) {
         number_circle = favourite_assets_card.length/2;
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*2 + 40*2 + "px" ;
         for (let i = 0; i < number_circle; i++) {
@@ -106,31 +106,49 @@ function open_window() {
             newDivs.push(newDiv)
             generate_circle(newDiv)
         }
+        item_on_click()
+        circle_active()
+        return;
     }
-    if (window.innerWidth < 890) {
+    if (window.innerWidth > 721) {
         number_circle = favourite_assets_card.length;
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 40 + "px" ;
-        for (let i = 0; i < number_circle; i++) {
-            let newDiv = document.createElement("div")
-            newDivs.push(newDiv)
-            generate_circle(newDiv)
-        }
+            for (let i = 0; i < number_circle; i++) {
+                let newDiv = document.createElement("div")
+                newDivs.push(newDiv)
+                generate_circle(newDiv)
+            }
+        item_on_click()
+        circle_active()
+        return;
     }
-    if (window.innerWidth < 721) {
+    if (window.innerWidth > 370) {
+        number_circle = favourite_assets_card.length;
+        container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 20 + "px" ;
+        circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
             newDivs.push(newDiv)
             generate_circle(newDiv)
         }
+        item_on_click()
+        circle_active()
+        return;
     }
     if (window.innerWidth < 370) {
+        number_circle = favourite_assets_card.length;
+        container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 10 + "px" ;
+        circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
             newDivs.push(newDiv)
             generate_circle(newDiv)
         }
+        item_on_click()
+        circle_active()
+        return;
     }
 
     circle_active()
