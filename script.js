@@ -6,6 +6,7 @@ const assets_cards_circle_items = document.querySelector(".assets_cards_circle_i
 const container_favourite_assets_cards = document.querySelector(".container_favourite_assets_cards")
 const wrapper_favourite_assets_cards = document.querySelector(".wrapper_favourite_assets_cards")
 
+
 let number_circle;
 let newDivs = []
 
@@ -37,11 +38,20 @@ window.addEventListener("resize", ()=> {
             item_on_click()
             circle_active()
         }
-    } else if (window.innerWidth <= 1190) {
+    } else if (window.innerWidth > 890 && window.innerWidth < 1190) {
         number_circle = favourite_assets_card.length/2;
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*2 + 40*2   + "px" ;
         circle_active()
+        if (newDivs.length > number_circle) {
+            for (let i = newDivs.length; i > number_circle; i--) {
+                const item = document.querySelectorAll(".assets_cards_circle_item")
+                if (item.length !== 0) {
+                    assets_cards_circle_items.removeChild(item[0])
+                    newDivs.splice(i-1, 1);
+                }
+            }
+        }
         for (let i = newDivs.length; i < number_circle; i++) {
             let newDiv = document.createElement("div")
             newDivs.push(newDiv)
@@ -50,7 +60,7 @@ window.addEventListener("resize", ()=> {
         item_on_click()
         circle_active()
     }
-    if (window.innerWidth < 890){
+    if (window.innerWidth > 721 && window.innerWidth < 890){
         number_circle = favourite_assets_card.length
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 40 + "px" ;
@@ -63,7 +73,7 @@ window.addEventListener("resize", ()=> {
         item_on_click()
         circle_active()
     }
-    if (window.innerWidth < 721){
+    if (window.innerWidth > 370 && window.innerWidth < 721){
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 20 + "px" ;
         circle_active()
@@ -75,7 +85,7 @@ window.addEventListener("resize", ()=> {
         item_on_click()
         circle_active()
     }
-    if (window.innerWidth < 370){
+    if (window.innerWidth > 0 && window.innerWidth < 370){
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 10 + "px" ;
         circle_active()
@@ -93,14 +103,19 @@ function open_window() {
     if (window.innerWidth > 1190) {
         number_circle = favourite_assets_card.length/3;
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*3 + 40*3 + "px" ;
+        circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
             newDivs.push(newDiv)
             generate_circle(newDiv)
         }
+        item_on_click()
+        circle_active()
+        return;
     } else if (window.innerWidth > 890) {
         number_circle = favourite_assets_card.length/2;
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*2 + 40*2 + "px" ;
+        circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
             newDivs.push(newDiv)
@@ -113,7 +128,8 @@ function open_window() {
     if (window.innerWidth > 721) {
         number_circle = favourite_assets_card.length;
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 40 + "px" ;
-            for (let i = 0; i < number_circle; i++) {
+        circle_active()
+        for (let i = 0; i < number_circle; i++) {
                 let newDiv = document.createElement("div")
                 newDivs.push(newDiv)
                 generate_circle(newDiv)

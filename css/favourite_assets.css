@@ -144,22 +144,20 @@
 
 .assets_cards_circle_items  {
     display: flex;
-    margin-top: 30px;
+        align-items: center;
+}
+
+.assets_cards_circle_items_all {
+    display: flex;
     align-items: center;
+    margin-top: 50px;
 }
 
-.assets_cards_circle_items::before  {
-    content: url("/img/favourite_assets/svg/chevron-left.svg");
-    display: block;
-    margin-top: 4px;
-    cursor: pointer;
-}
+@media(max-width: 800px) {
+    .assets_cards_circle_items_all {
+        margin-top: 30px;
+    }
 
-.assets_cards_circle_items::after  {
-    content: url("/img/favourite_assets/svg/chevron-right.svg");
-    display: block;
-    margin-top: 4px;
-    cursor: pointer;
 }
 
 .assets_cards_circle_item {
