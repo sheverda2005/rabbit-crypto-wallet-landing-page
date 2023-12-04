@@ -6,6 +6,11 @@ const assets_cards_circle_items = document.querySelector(".assets_cards_circle_i
 const container_favourite_assets_cards = document.querySelector(".container_favourite_assets_cards")
 const wrapper_favourite_assets_cards = document.querySelector(".wrapper_favourite_assets_cards")
 
+const assets_cards_circle_item_before = document.querySelector(".assets_cards_circle_item_before");
+const assets_cards_circle_item_right = document.querySelector(".assets_cards_circle_item_right");
+
+
+
 
 let number_circle;
 let newDivs = []
@@ -209,3 +214,42 @@ function circle_active() {
         item.classList.remove('active')
     })
 }
+
+assets_cards_circle_item_right.addEventListener("click", ()=> {
+    let assets_cards_circle_item = document.querySelectorAll(".assets_cards_circle_item")
+    let element_index = 0;
+    assets_cards_circle_item.forEach((item, index) => {
+        if(item.classList.contains("active")) {
+            element_index = index;
+            item.classList.remove('active')
+        }
+    })
+    if (element_index+1 < assets_cards_circle_item.length) {
+        assets_cards_circle_item[element_index+1].classList.add("active")
+        let width = container_favourite_assets_cards.offsetWidth
+        container_favourite_assets_cards.style.transform = `translateX(-${width*(element_index+1)}px)`
+        container_favourite_assets_cards.style.transition = "1s ease"
+    }
+    if (element_index+1 === assets_cards_circle_item.length) {
+        assets_cards_circle_item[element_index].classList.add("active")
+    }
+})
+
+assets_cards_circle_item_before.addEventListener("click", ()=> {
+    let assets_cards_circle_item = document.querySelectorAll(".assets_cards_circle_item")
+    let element_index = 0;
+    assets_cards_circle_item.forEach((item, index) => {
+        if(item.classList.contains("active")) {
+            element_index = index;
+            item.classList.remove('active')
+        }
+    })
+    if (element_index === 0) {
+        assets_cards_circle_item[element_index].classList.add("active")
+    } else {
+        assets_cards_circle_item[element_index-1].classList.add("active")
+        let width = container_favourite_assets_cards.offsetWidth
+        container_favourite_assets_cards.style.transform = `translateX(-${width*(element_index-1)}px)`
+        container_favourite_assets_cards.style.transition = "1s ease"
+    }
+})

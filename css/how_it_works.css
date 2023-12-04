@@ -80,6 +80,14 @@
     display: none;
 }
 
+.assets_cards_circle_item_right {
+    cursor: pointer;
+}
+
+.assets_cards_circle_item_before {
+    cursor: pointer;
+}
+
 @media (max-width: 900px) {
     .how_it_works_info_img img {
         max-height: 500px;
