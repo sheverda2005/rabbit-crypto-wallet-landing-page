@@ -107,8 +107,7 @@ window.addEventListener("resize", ()=> {
 function open_window() {
     if (window.innerWidth > 1190) {
         number_circle = favourite_assets_card.length/3;
-        console.log(favourite_assets_card[0].clientWidth*3 + 40*3)
-        wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*3 + 40*3 + "px" ;
+        wrapper_favourite_assets_cards.style.width = 1212 + "px";
         circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
@@ -120,7 +119,7 @@ function open_window() {
         return;
     } else if (window.innerWidth > 890) {
         number_circle = favourite_assets_card.length/2;
-        wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*2 + 40*2 + "px" ;
+        wrapper_favourite_assets_cards.style.width = 808 + "px" ;
         circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
@@ -133,7 +132,7 @@ function open_window() {
     }
     if (window.innerWidth > 721) {
         number_circle = favourite_assets_card.length;
-        wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 40 + "px" ;
+        wrapper_favourite_assets_cards.style.width = 404 + "px" ;
         circle_active()
         for (let i = 0; i < number_circle; i++) {
                 let newDiv = document.createElement("div")
