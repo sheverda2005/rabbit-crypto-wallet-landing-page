@@ -146,7 +146,7 @@ function open_window() {
     if (window.innerWidth > 370) {
         number_circle = favourite_assets_card.length;
         container_favourite_assets_cards.style.transform = `translateX(0px)`
-        wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 20 + "px" ;
+        wrapper_favourite_assets_cards.style.width = 354 + "px" ;
         circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
@@ -160,7 +160,7 @@ function open_window() {
     if (window.innerWidth < 370) {
         number_circle = favourite_assets_card.length;
         container_favourite_assets_cards.style.transform = `translateX(0px)`
-        wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth + 10 + "px" ;
+        wrapper_favourite_assets_cards.style.width = 317 + "px" ;
         circle_active()
         for (let i = 0; i < number_circle; i++) {
             let newDiv = document.createElement("div")
