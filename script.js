@@ -107,6 +107,7 @@ window.addEventListener("resize", ()=> {
 function open_window() {
     if (window.innerWidth > 1190) {
         number_circle = favourite_assets_card.length/3;
+        console.log(favourite_assets_card[0].clientWidth*3 + 40*3)
         wrapper_favourite_assets_cards.style.width = favourite_assets_card[0].clientWidth*3 + 40*3 + "px" ;
         circle_active()
         for (let i = 0; i < number_circle; i++) {
