@@ -18,6 +18,7 @@ let newDivs = []
 
 open_window()
 window.addEventListener("resize", ()=> {
+    console.log(wrapper_favourite_assets_cards.style.width)
     if (window.innerWidth > 1190) {
         number_circle = favourite_assets_card.length/3;
         container_favourite_assets_cards.style.transform = `translateX(0px)`
@@ -78,7 +79,19 @@ window.addEventListener("resize", ()=> {
         item_on_click()
         circle_active()
     }
-    if (window.innerWidth > 370 && window.innerWidth < 721){
+    if (window.innerWidth > 370 && window.innerWidth < 400){
+        container_favourite_assets_cards.style.transform = `translateX(0px)`
+        wrapper_favourite_assets_cards.style.width = 354 + "px" ;
+        circle_active()
+        for (let i = newDivs.length; i < number_circle; i++) {
+            let newDiv = document.createElement("div")
+            newDivs.push(newDiv)
+            generate_circle(newDiv)
+        }
+        item_on_click()
+        circle_active()
+    }
+    if (window.innerWidth > 370 && window.innerWidth < 721 && window.innerWidth > 400){
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = 384 + "px" ;
         circle_active()
@@ -140,7 +153,20 @@ function open_window() {
         item_on_click()
         circle_active()
     }
-    if (document.documentElement.clientWidth > 370 && document.documentElement.clientWidth < 721) {
+    if (document.documentElement.clientWidth > 370 && document.documentElement.clientWidth < 400){
+        number_circle = favourite_assets_card.length;
+        container_favourite_assets_cards.style.transform = `translateX(0px)`
+        wrapper_favourite_assets_cards.style.width = 354 + "px" ;
+        circle_active()
+        for (let i = 0; i < number_circle; i++) {
+            let newDiv = document.createElement("div")
+            newDivs.push(newDiv)
+            generate_circle(newDiv)
+        }
+        item_on_click()
+        circle_active()
+    }
+    if (document.documentElement.clientWidth > 370 && document.documentElement.clientWidth < 721 && document.documentElement.clientWidth > 400) {
         number_circle = favourite_assets_card.length;
         container_favourite_assets_cards.style.transform = `translateX(0px)`
         wrapper_favourite_assets_cards.style.width = 384 + "px" ;
